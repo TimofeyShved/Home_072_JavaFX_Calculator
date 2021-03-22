@@ -10,10 +10,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 450, 450));
-        primaryStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml")); // загрузка xml, разметка для нашего визуального проекта
+        primaryStage.setTitle("Калькулятор"); // имя окна(сцена)
+        primaryStage.setScene(new Scene(root, 450, 450)); // размеры окна
+        primaryStage.show();  // отобразить окно
     }
 
 
